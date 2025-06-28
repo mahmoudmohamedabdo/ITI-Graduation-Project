@@ -1,14 +1,16 @@
 import React, { useRef, useState, useEffect } from 'react';
 import Navbar from './Shared Component/Navbar';
+import CourseCard from './Shared Component/CourseCard';
+import NewJops from './Shared Component/NewJops';
 import img1 from './../assets/Images/img1.png';
 import img2 from './../assets/Images/img2.png';
 import img3 from './../assets/Images/img3.png';
 import img4 from './../assets/Images/img4.png';
-import CourseCard from './Shared Component/CourseCard';
 import rightArrow from './../assets/Images/rightArrow.png';
 import leftArrow from './../assets/Images/leftArrow.png';
-import NewJops from './Shared Component/NewJops';
 import blackArrow from './../assets/Images/blackArrow.png'
+
+
 export default function HomePage() {
   const scrollRef = useRef(null);
   const [isAtStart, setIsAtStart] = useState(true);

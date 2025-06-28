@@ -19,7 +19,7 @@ export default function NewJobs() {
           </p>
         </div>
 
-        {/* Skills (All React) */}
+        {/* Skills*/}
         <div className="flex flex-wrap gap-2 mt-4 px-4">
           {Array(6).fill("React").map((skill, index) => (
             <span
