@@ -1,22 +1,23 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
+import Navbar from '../Components/SharedComponents/Navbar'
 import img1 from '../assets/Images/img1.png'
 import img2 from '../assets/Images/img2.png'
 import img3 from '../assets/Images/img3.png'
 import img4 from '../assets/Images/img4.png'
-
+import rightArrow from '../assets/Images/rightArrow.png'
+import leftArrow from '../assets/Images/leftArrow.png'
 export default function HomePage() {
     return (
         <div>
             <Navbar />
 
-            {/*Hero Section*/ }
+            {/*Hero Section*/}
             <main className="py-12 bg-gray-50 min-h-screen">
 
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h3 className="text-xl font-semibold text-gray-800 mb-8">Welcome back, Rola Alaa</h3>
 
-                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+                    <div className="flex flex-col lg:flex-row justify-between items-center gap-8 my-5">
                         <div className="text-center space-y-4 ">
                             <h1 className="text-5xl font-bold " style={{ color: '#61758A' }}>Master Your</h1>
                             <h2 className="text-5xl font-bold " style={{ color: '#1E7CE8' }}>Technical Interviews</h2>
@@ -46,22 +47,32 @@ export default function HomePage() {
                                 ><img src={img2} alt="" /></div>
                             </div>
                             <div className="row2 flex">
-                                 <div
+                                <div
                                     style={{ backgroundColor: '#2485E4', borderColor: '#F2F6FF' }}
                                     className="m-3 border-5 rounded-bl-4xl transition duration-300 ease-in-out hover:translate-y-2 hover:-translate-x-2"
                                 ><img src={img3} alt="" /></div>
-                                 <div
+                                <div
                                     style={{ backgroundColor: '#428EB7', borderColor: '#F2F6FF' }}
                                     className="m-3 border-4 rounded-br-4xl transition duration-300 ease-in-out hover:translate-y-2 hover:translate-x-2"
                                 ><img src={img4} alt="" /></div>
                             </div>
                         </div>
                     </div>
-
+                    {/*Slider*/}
+                    <div style={{ marginTop: '25px' }} className='flex justify-between items-center'>
+                        <div><h3 className='text-2xl'>Tracks</h3></div>
+                        <div className="icons flex items-center gap-2">
+                            <img src={rightArrow} alt="" />
+                            <img src={leftArrow} alt="" />
+                        </div>
+                    </div>
+                    {/*Course Card*/}
+                  
                 </div>
 
             </main>
-            {/*Slider*/}
+
+
         </div>
     )
 }

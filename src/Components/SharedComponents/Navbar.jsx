@@ -1,5 +1,5 @@
 import React from 'react';
-import user from '../assets/Images/user.png'
+import user from '../../assets/Images/user.png'
 export default function Navbar() {
 
   const toggleMobileMenu = () => {
