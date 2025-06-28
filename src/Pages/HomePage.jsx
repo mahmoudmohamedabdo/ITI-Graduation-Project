@@ -36,23 +36,23 @@ export default function HomePage() {
                             <div className="row1 flex">
                                 <div
                                     style={{ backgroundColor: '#428EB7', borderColor: '#F2F6FF' }}
-                                    className="m-3 border-5 rounded-tl-4xl transition duration-300 ease-in-out hover:-translate-y-2"
+                                    className="m-3 border-5 rounded-tl-4xl transition duration-300 ease-in-out hover:-translate-y-2 hover:-translate-x-2"
                                 >
                                     <img src={img1} alt="" className="w-full h-auto" />
                                 </div>
                                 <div
-                                    style={{ backgroundColor: '#428EB7', borderColor: '#F2F6FF' }}
-                                    className="m-3 border-5 rounded-tr-4xl transition duration-300 ease-in-out hover:-translate-y-2"
+                                    style={{ backgroundColor: '#2485E4', borderColor: '#F2F6FF' }}
+                                    className="m-3 border-5 rounded-tr-4xl transition duration-300 ease-in-out hover:-translate-y-2 hover:translate-x-2"
                                 ><img src={img2} alt="" /></div>
                             </div>
                             <div className="row2 flex">
                                  <div
-                                    style={{ backgroundColor: '#428EB7', borderColor: '#F2F6FF' }}
-                                    className="m-3 border-5 rounded-bl-4xl transition duration-300 ease-in-out hover:-translate-y-2"
+                                    style={{ backgroundColor: '#2485E4', borderColor: '#F2F6FF' }}
+                                    className="m-3 border-5 rounded-bl-4xl transition duration-300 ease-in-out hover:translate-y-2 hover:-translate-x-2"
                                 ><img src={img3} alt="" /></div>
                                  <div
                                     style={{ backgroundColor: '#428EB7', borderColor: '#F2F6FF' }}
-                                    className="m-3 border-5 rounded-br-4xl transition duration-300 ease-in-out hover:-translate-y-2"
+                                    className="m-3 border-4 rounded-br-4xl transition duration-300 ease-in-out hover:translate-y-2 hover:translate-x-2"
                                 ><img src={img4} alt="" /></div>
                             </div>
                         </div>
