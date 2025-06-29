@@ -10,7 +10,7 @@ export default function Track() {
             <main className="py-12 min-h-screen bg-gray-50">
 
                 {/* Hero Section*/}
-                <div className="bg-white">
+                <div className="bg-white my-5">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col lg:flex-row justify-between items-center gap-8">
                         <div className="space-y-4">
                             <h1 className="text-5xl font-bold">Select A</h1>
@@ -28,12 +28,44 @@ export default function Track() {
                     </div>
                 </div>
 
-                {/*Details Section */}
-                <div className="bg-white">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col lg:flex-row justify-between items-center gap-8">
-                       
-                    </div>
-                </div>
+                {/* Details Section */}
+<div className="bg-white py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="bg-white rounded-xl shadow-lg px-8 py-10">
+      
+      {/* Title */}
+      <h2 className="text-xl font-semibold text-center text-gray-800 my-6">
+        Track Overview
+      </h2>
+      
+      {/* Cards */}
+      <div className="flex flex-col md:flex-row justify-around items-center gap-8">
+        
+        {/* Card 1 */}
+        <div className="flex flex-col items-center">
+          <span className="text-[#2563EB] text-3xl font-bold">2</span>
+          <span className="text-gray-600 mt-1 text-sm">Technologies</span>
+        </div>
+
+        {/* Card 2 */}
+        <div className="flex flex-col items-center">
+          <span className="text-[#4F46E5] text-3xl font-bold">3</span>
+          <span className="text-gray-600 mt-1 text-sm">Skill Levels</span>
+        </div>
+
+        {/* Card 3 */}
+        <div className="flex flex-col items-center">
+          <span className="text-[#9333EA] text-3xl font-bold">8</span>
+          <span className="text-gray-600 mt-1 text-sm">Total Questions</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
             </main>
             <Footer />
