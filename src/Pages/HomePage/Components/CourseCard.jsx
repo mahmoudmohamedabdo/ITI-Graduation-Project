@@ -1,6 +1,6 @@
-import logo from '../../assets/Images/logo.png'
-import Duration from '../../assets/Images/duration.png'
-import level from '../../assets/Images/level.png'
+import logo from '../../../assets/Images/logo.png'
+import Duration from '../../../assets/Images/duration.png'
+import level from '../../../assets/Images/level.png'
 
 export default function CourseCard() {
     return (

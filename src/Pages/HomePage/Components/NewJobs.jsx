@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function NewJops() {
   return (
-    <div className="w-80 rounded-xl overflow-hidden shadow-md bg-base-100">
+    <div className="w-72 rounded-xl overflow-hidden shadow-md bg-base-100">
       <div className="p-0">
         {/* Top Header */}
         <div className="bg-gradient-to-r from-[#298DE0] to-[#006AC2] p-4 rounded-t-xl">
