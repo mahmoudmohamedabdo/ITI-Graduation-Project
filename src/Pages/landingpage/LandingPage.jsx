@@ -101,15 +101,16 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
+          <LearningTracks />
+          <TrackSlider />
+          <CallToAction />
         </div>
       </main>
 
-      
-      
-      <LearningTracks />
-      <TrackSlider /> 
-      <CallToAction />     
-      <Footer />      
+
+
+
+      <Footer />
     </div>
   );
 }

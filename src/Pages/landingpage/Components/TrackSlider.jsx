@@ -2,7 +2,7 @@ import React from "react";
 
 function TrackCard() {
   return (
-    <div className="border border-gray-200 rounded-xl shadow-sm w-[220px] p-4 text-left relative bg-white">
+    <div className="border border-gray-200 rounded-xl shadow-sm w-64 p-4 text-left relative bg-white">
       {/* Top Blue Border */}
       <div className="absolute top-0 left-0 w-full h-1 bg-blue-600 rounded-t-xl"></div>
 
