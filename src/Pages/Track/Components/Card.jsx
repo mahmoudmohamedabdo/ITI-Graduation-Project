@@ -43,13 +43,11 @@ export default function Card() {
       {/* Modal (Level Component) */}
       {showModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
-          {/* الخلفية السوداء */}
           <div
             className="absolute inset-0 bg-black opacity-50"
             onClick={() => setShowModal(false)}
           ></div>
 
-          {/* نافذة الـ Level */}
           <div className="z-50 w-full max-w-4xl mx-auto relative">
             <Level isOpen={showModal} onClose={() => setShowModal(false)} />
           </div>
