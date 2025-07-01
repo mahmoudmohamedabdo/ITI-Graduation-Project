@@ -3,6 +3,7 @@ import Navbar from '../../layouts/Navbar'
 import Footer from '../../layouts/Footer'
 import learn from '../../assets/Images/Learning.png'
 import Card from './Components/Card'
+import Level from '../Level/Level'
 export default function Track() {
   return (
     <div>
