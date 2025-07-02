@@ -5,11 +5,12 @@ import HomePage from './Pages/HomePage/HomePage';
 import Track from "./Pages/Track/Track";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Jops from "./Pages/Jops/Jops";
 
 function App() {
   return (
     <div>
-      <Track />
+      <Jops />
       
     </div>
   );
