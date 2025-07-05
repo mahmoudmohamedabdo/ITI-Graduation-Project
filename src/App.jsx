@@ -1,23 +1,14 @@
+// ===== src/App.jsx =====
 import React from "react";
-import "./App.css";
- import LandingPage from "./Pages/landingpage/LandingPage";
-// import LearningTracks from "./Pages/landingpage/Components/LearningTracks";
-// import TrackSlider from "./Pages/landingpage/Components/TrackSlider";
-// import CallToAction from "./Pages/landingpage/Components/CallToAction";
+import ExamPage from "./Pages/student/ExamPage";
+import "./app.css"; 
+
 function App() {
-   
-   
-  
   return (
-    <div>
-      {/* <LearningTracks />
-      
-      {<TrackSlider /> */}
-      <LandingPage />
+    <div className="min-h-screen bg-gray-50">
+      <ExamPage />
     </div>
   );
 }
 
-
 export default App;
-
