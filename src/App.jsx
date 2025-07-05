@@ -6,11 +6,12 @@ import Track from "./Pages/Track/Track";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jops from "./Pages/Jops/Jops";
+import JopDetails from "./Pages/JopDetails/JopDetails";
 
 function App() {
   return (
     <div>
-      <Jops />
+      <JopDetails />
       
     </div>
   );
