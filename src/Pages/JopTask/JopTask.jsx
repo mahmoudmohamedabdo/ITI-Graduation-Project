@@ -1,4 +1,5 @@
 import React from 'react'
+import JopNav from '../../layouts/JopNav'
 
 export default function JopTask() {
     return (
@@ -9,11 +10,7 @@ export default function JopTask() {
                     <h2 className="text-xl font-semibold text-gray-800">Frontend Development</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-6 mt-6 border-b border-black-300 space-x-10">
-                    <button className="pb-2 font-semibold">Details</button>
-                    <button className="pb-2 font-semibold">Quiz</button>
-                    <button className="pb-2 border-b-4 border-black  font-semibold">Task</button>
-                </div>
+               <JopNav/>  
             </div>
             {/**Jop Task */}
             <h2 className='text-xl font-bold mx-2 my-6'>Technical Task</h2>

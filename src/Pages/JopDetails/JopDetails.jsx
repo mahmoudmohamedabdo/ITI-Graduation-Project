@@ -2,6 +2,7 @@ import React from 'react';
 import alert from '../../assets/Images/alert.png';
 import alerBlue from '../../assets/Images/alertBlue.png';
 import right from '../../assets/Images/right.png';
+import JopNav from '../../layouts/JopNav';
 
 export default function JopDetails() {
     return (
@@ -12,11 +13,7 @@ export default function JopDetails() {
                     <h2 className="text-xl font-semibold text-gray-800">Frontend Development</h2>
                 </div>
 
-                <div className="flex flex-wrap gap-6 mt-6 border-b border-black-300 space-x-10">
-                    <button className="pb-2 border-b-4 border-black font-semibold">Details</button>
-                    <button className="pb-2 font-semibold">Quiz</button>
-                    <button className="pb-2 font-semibold">Task</button>
-                </div>
+                <JopNav/>
             </div>
 
             {/* Job Details */}
