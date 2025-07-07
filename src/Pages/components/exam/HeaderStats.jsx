@@ -1,10 +1,15 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
-
+import { useNavigate } from "react-router-dom";
 const HeaderStats = ({ trackName, questionsCompleted, totalQuestions, percentage }) => {
+  const navigate = useNavigate();
+  const backToTracksPage=()=>
+  {
+    navigate('/track')
+  }
   return (
     <div className="flex justify-between items-center mb-8">
       <div className="flex items-center gap-4">
-        <ArrowLeftIcon className="w-5 h-5 text-gray-600 cursor-pointer" />
+        <ArrowLeftIcon className="w-5 h-5 text-gray-600 cursor-pointer" onClick={backToTracksPage}/>
         <div>
           <h2 className="text-xl font-bold text-gray-900">{trackName}</h2>
           <div className="flex items-center text-sm text-gray-500 gap-2 mt-1">

@@ -1,6 +1,11 @@
 import React from 'react'
 import company from '../../../assets/Images/company.png'
+import { useNavigate } from 'react-router-dom'
 export default function CompanyCard() {
+    const navigae=useNavigate()
+    const showJopDetails=()=>{
+   navigae('/jopDetails')
+    }
     return (
 
         <div className='flex flex-col items-center '>
@@ -25,7 +30,7 @@ export default function CompanyCard() {
 
                         {/* Apply Button */}
                         <div className="card-actions justify-start">
-                            <button className="btn text-white bg-[#1E7CE8] rounded-2xl px-6">Apply Now</button>
+                            <button className="btn text-white bg-[#1E7CE8] rounded-2xl px-6" onClick={showJopDetails}>Apply Now</button>
                         </div>
                     </div>
 

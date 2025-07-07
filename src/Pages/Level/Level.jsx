@@ -5,8 +5,13 @@ import stars from '../../assets/Images/stars.png';
 import choice from '../../assets/Images/choice.png';
 import mc from '../../assets/Images/true.png';
 import code from '../../assets/Images/code.png';
-
+import { useNavigate } from 'react-router-dom';
 export default function Level({ isOpen, onClose }) {
+  const navigate = useNavigate(); 
+
+  const openExamPage = () => {
+    navigate('/exam'); 
+  };
   if (!isOpen) return null;
 
   return (
@@ -92,7 +97,7 @@ export default function Level({ isOpen, onClose }) {
                 <span>🕒 10 min</span>
                 <span className="text-[#1C79EA] cursor-pointer">2 questions</span>
               </div>
-              <button className="btn btn-sm rounded-full text-white bg-[#1C79EA] px-4">
+              <button className="btn btn-sm rounded-full text-white bg-[#1C79EA] px-4" onClick={openExamPage}>
                 Start Level
               </button>
             </div>
@@ -148,7 +153,7 @@ export default function Level({ isOpen, onClose }) {
                 <span>🕒 10 min</span>
                 <span className="text-[#1C79EA] cursor-pointer">2 questions</span>
               </div>
-              <button className="btn btn-sm rounded-full text-white bg-[#1C79EA] px-4">
+              <button className="btn btn-sm rounded-full text-white bg-[#1C79EA] px-4" onClick={openExamPage}>
                 Start Level
               </button>
             </div>

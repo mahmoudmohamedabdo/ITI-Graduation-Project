@@ -1,11 +1,30 @@
-import React from 'react'
+// JopNav.jsx
+import { NavLink } from "react-router-dom";
 
 export default function JopNav() {
+    const baseClass = "pb-2 font-semibold";
+    const activeClass = "border-b-2 border-black";
+
     return (
-        /**border-b-4 border-black */
-        <div className="flex flex-wrap gap-6 mt-6 border-b border-black-300 space-x-10">
-            <button className="pb-2 font-semibold">Details</button>
-            <button className="pb-2 font-semibold">Quiz</button>
-            <button className="pb-2 font-semibold">Task</button>
-        </div>)
+        <div className="flex gap-6 mt-6 border-b border-gray-300">
+            <NavLink
+                to="/jopDetails"
+                className={({ isActive }) => isActive ? `${baseClass} ${activeClass}` : baseClass}
+            >
+                Details
+            </NavLink>
+            <NavLink
+                to="/jopQuiz"
+                className={({ isActive }) => isActive ? `${baseClass} ${activeClass}` : baseClass}
+            >
+                Quiz
+            </NavLink>
+            <NavLink
+                to="/jopTask"
+                className={({ isActive }) => isActive ? `${baseClass} ${activeClass}` : baseClass}
+            >
+                Task
+            </NavLink>
+        </div>
+    );
 }

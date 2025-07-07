@@ -1,8 +1,14 @@
 import logo from '../../../assets/Images/logo.png'
 import Duration from '../../../assets/Images/duration.png'
 import level from '../../../assets/Images/level.png'
+import { useNavigate } from 'react-router-dom';
 
 export default function CourseCard() {
+      const navigate = useNavigate();
+    const openTrackPage=()=>
+    {
+        navigate('/track')
+    }
     return (
         <div className="w-96 rounded-lg overflow-hidden shadow-sm bg-base-100">
             <div className="card-body p-0">
@@ -41,7 +47,7 @@ export default function CourseCard() {
 
                 {/* Button */}
                 <div className="mt-6 px-4 pb-4">
-                    <button className="btn w-full rounded-2xl text-white bg-[#1C79EA] hover:bg-blue-700">
+                    <button className="btn w-full rounded-2xl text-white bg-[#1C79EA] hover:bg-blue-700" onClick={openTrackPage}>
                         Start Learning
                     </button>
                 </div>

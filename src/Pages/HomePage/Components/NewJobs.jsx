@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function NewJops() {
+  const navigate =useNavigate();
+  const openJopDetailsPage=()=>{
+    navigate('/jopDetails')
+  }
   return (
     <div className="w-72 rounded-xl overflow-hidden shadow-md bg-base-100">
       <div className="p-0">
@@ -36,7 +41,7 @@ export default function NewJops() {
 
         {/* Button */}
         <div className="mt-5 mb-4 px-4 text-center">
-          <button className="btn rounded-full text-white bg-[#1C79EA] px-6">
+          <button className="btn rounded-full text-white bg-[#1C79EA] px-6" onClick={openJopDetailsPage}>
             Apply Now
           </button>
         </div>
